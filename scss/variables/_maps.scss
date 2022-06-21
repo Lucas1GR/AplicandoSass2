@@ -1,0 +1,27 @@
+/*Mapa*/
+$textoResaltado: (
+    inicio: rgb(98, 0, 255),
+    verano: rgb(162, 0, 255),
+    mitos: rgb(0, 255, 115),
+    sensible: rgb(0, 183, 255),
+);
+
+/*Bucle*/
+@each $frases, $color in $textoResaltado{
+    .#{$frases}{
+        color: $color;
+        font-weight: bold;
+    }
+}
+/*Mapa de tamaños de Titulo*/
+$font-sizes: (
+    h1: 48px,
+    h2: 36px,
+    h3: 26px,
+    p: 18px,
+);
+@each $etiqueta, $tamanio-titulos in $font-sizes{
+    #{$etiqueta}{
+        font-size: $tamanio-titulos;
+    }
+}

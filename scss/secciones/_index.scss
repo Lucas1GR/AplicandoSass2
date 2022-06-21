@@ -1,0 +1,39 @@
+/*Index*/
+.mainIndex{
+    img{
+        width: $ancho/2;
+    }
+    h3{
+        font-size: $font-size-grande - 3rem;
+    }
+    .textoNoticia{
+        // @extend %estilosParrafo;
+        @include contenedor();
+        p{
+            @include fontStyle ($amarillo, 2rem, black);
+        }
+    }
+    h2{
+        @extend %estilosTitulo;
+    }
+}
+footer{
+    p{
+        @include fontStyle($amarillo, 15px, red)
+    }
+}
+
+@media (max-width: 650px){
+    .mainIndex{
+        img{
+            width: $ancho/4;
+        }
+    }      
+}
+@media (max-width: 450px){
+    .mainIndex{
+        img{
+            width: $ancho/4;
+        }  
+    }
+}

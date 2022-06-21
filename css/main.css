@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Tamaños*/
+/*Colores*/
+.mainIndex h2 {
+  font-size: 30px;
+  font-family: serif;
+  text-transform: uppercase; }
+
+/*Mapa*/
+/*Bucle*/
+.inicio {
+  color: #6200ff;
+  font-weight: bold; }
+
+.verano {
+  color: #a200ff;
+  font-weight: bold; }
+
+.mitos {
+  color: #00ff73;
+  font-weight: bold; }
+
+.sensible {
+  color: #00b7ff;
+  font-weight: bold; }
+
+/*Mapa de tamaños de Titulo*/
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 26px; }
+
+p {
+  font-size: 18px; }
+
+/*Secciones*/
+/*Index*/
+.mainIndex img {
+  width: 525px; }
+
+.mainIndex h3 {
+  font-size: 2rem; }
+
+.mainIndex .textoNoticia {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ffa500; }
+  .mainIndex .textoNoticia p {
+    color: #ffff00;
+    background-color: #008000;
+    font-size: 2rem; }
+    .mainIndex .textoNoticia p:hover {
+      background-color: black; }
+
+footer p {
+  color: #ffff00;
+  background-color: #008000;
+  font-size: 15px; }
+  footer p:hover {
+    background-color: red; }
+
+@media (max-width: 650px) {
+  .mainIndex img {
+    width: 262.5px; } }
+
+@media (max-width: 450px) {
+  .mainIndex img {
+    width: 262.5px; } }
